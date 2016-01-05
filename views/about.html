@@ -1,0 +1,17 @@
+{% extends "default/layout.html" %}
+{% block content %}
+<div class="quality">
+    <div class="container">
+        <h3>{{page.title}}</h3>
+        <div class="quality-frame">
+            <div class="col-md-8 text-footer">
+                <p>{{page.short_description}}</p>
+            </div>
+            <div class="col-md-4 col-sm-4 quality-grid">
+                <img src="{{page.image}}" alt="/" class="img-responsive quality-img-wid" />
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+{% endblock %}

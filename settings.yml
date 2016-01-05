@@ -1,0 +1,28 @@
+application:
+    name: EmpariWeb 
+    debug: true
+    locale: pt_BR
+    model_namespace: EmpariWeb\Model
+    security_open_routes:  >
+                          /conta/login,						  
+                          /conta/register,
+                          /customer/shootEmails,
+                          /conta/photo,
+                          /conta/empresa/photo,
+                          /conta/forgot-password,
+                          /conta/reset-password,
+                          /rest,
+                          /rpc,
+    host:     cpanel0118.hospedagemdesites.ws
+    username: contato@helpcompras.com.br
+    password: empari1064681
+    port:      465
+    email-from: contato@helpcompras.com.br
+    transport: smtp
+    encryption: ssl
+    auth_mode: login    
+    spool: { type: memory }
+    disable_delivery :  false
+    delivery_address :  null
+twig:
+    path: /views
